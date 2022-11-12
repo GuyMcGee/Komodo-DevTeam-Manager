@@ -90,7 +90,7 @@ switch(userinput)
         Console.WriteLine("The following developers require a Pluralsight license:");
         foreach (Developer Dev in listOfDevs)
             if (Dev.HasPluralsight == false)
-                Console.WriteLine(Dev.FullName);
+                Console.WriteLine($"Dev ID: {Dev.Id} | {Dev.FullName}");
         break;
 
     case "teams":
