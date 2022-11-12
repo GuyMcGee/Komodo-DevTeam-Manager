@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "DevTeams.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DevTeams.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevTeams.Data.dll": {}
+        }
+      },
+      "DevTeams.Repositories/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DevTeams.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DevTeams.Repositories.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevTeams.Repositories.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevTeams.Data/1.0.0": {
+      "type": "project",
+      "path": "../../../Komodo-Dev-Team-App/DevTeams.Data/DevTeams.Data.csproj",
+      "msbuildProject": "../../../Komodo-Dev-Team-App/DevTeams.Data/DevTeams.Data.csproj"
+    },
+    "DevTeams.Repositories/1.0.0": {
+      "type": "project",
+      "path": "../../../Komodo-Dev-Team-App/DevTeams.Repositories/DevTeams.Repositories.csproj",
+      "msbuildProject": "../../../Komodo-Dev-Team-App/DevTeams.Repositories/DevTeams.Repositories.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "DevTeams.Data >= 1.0.0",
+      "DevTeams.Repositories >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\n64ev\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\KomodoDevApp.csproj",
+      "projectName": "KomodoDevApp",
+      "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\KomodoDevApp.csproj",
+      "packagesPath": "C:\\Users\\n64ev\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\n64ev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\Komodo-Dev-Team-App\\DevTeams.Data\\DevTeams.Data.csproj": {
+              "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\Komodo-Dev-Team-App\\DevTeams.Data\\DevTeams.Data.csproj"
+            },
+            "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\Komodo-Dev-Team-App\\DevTeams.Repositories\\DevTeams.Repositories.csproj": {
+              "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\Komodo-Dev-Team-App\\DevTeams.Repositories\\DevTeams.Repositories.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
