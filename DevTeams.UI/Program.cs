@@ -5,12 +5,13 @@ using System.Numerics;
 
 var devRepo = new DeveloperRepository();
 var devTeamRepo = new DevTeamRepository();
-Console.WriteLine(" ");
-Console.WriteLine(" Komodo Developer Team Management Terminal");
-Console.WriteLine(" ");
-Console.WriteLine(" ");
+Console.WriteLine();
+Console.WriteLine();
+Console.WriteLine("\t Komodo Developer Team Management Terminal");
+Console.WriteLine();
+Console.WriteLine();
 
-Console.WriteLine(" Type \"help\" to see a list of avaliable commands.");
+Console.WriteLine("\tType \"help\" to see a list of avaliable commands.");
 Console.WriteLine(" ");
 Console.WriteLine(" ");
 Console.WriteLine(" ");
@@ -30,34 +31,34 @@ switch(userinput)
         var devsList = devRepo.Read();
         if (devsList.Count == 0)
         {
-            Console.WriteLine(" There are currently no developers in the database.");
+            Console.WriteLine("There are currently no developers in the database.");
             break;
         }
         foreach (Developer person in devsList)
         {
-            Console.WriteLine($" Developer ID : {person.Id} | {person.FullName}");
+            Console.WriteLine($"Developer ID : {person.Id} | {person.FullName}");
         }
         break;
 
     case "new dev":
         var developer = new Developer();
-        Console.WriteLine(" Enter the developer's first name.");
+        Console.WriteLine("Enter the developer's first name.");
         firstname:
         var firstName = Console.ReadLine();
         if (String.IsNullOrWhiteSpace(firstName))
         {
-            Console.WriteLine(" First name cannot be blank. Please try again.");
+            Console.WriteLine("First name cannot be blank. Please try again.");
             goto firstname;
         }
-        Console.WriteLine(" Enter the developer's last name.");
+        Console.WriteLine("Enter the developer's last name.");
         lastname:
         var lastName = Console.ReadLine();
         if (String.IsNullOrWhiteSpace(lastName))
         {
-            Console.WriteLine(" Last name cannot be blank. Please try again.");
+            Console.WriteLine("Last name cannot be blank. Please try again.");
             goto lastname;
         }
-        Console.WriteLine(" Does this developer have a Pluralsight license? Enter \"y\" for yes or \"n\" for no.");
+        Console.WriteLine("Does this developer have a Pluralsight license? Enter \"y\" for yes or \"n\" for no.");
         pluralsightquestion:
         var userAnswer = Console.ReadLine();
         if (userAnswer == "y")
@@ -66,7 +67,7 @@ switch(userinput)
             developer.HasPluralsight = false;
         else
         {
-            Console.WriteLine(" Please enter \"y\" or \"n\"");
+            Console.WriteLine("Please enter \"y\" or \"n\"");
             goto pluralsightquestion;
         }
 
@@ -76,17 +77,17 @@ switch(userinput)
 
         devRepo.Add(developer);
 
-        Console.WriteLine(" Developer " + developer.FullName + " has been created and added to developer database.");
+        Console.WriteLine("Developer " + developer.FullName + " has been created and added to developer database.");
         break ;
 
     case "pluralsight":
         var listOfDevs = devRepo.Read(); 
         if (listOfDevs.Count == 0)
         {
-            Console.WriteLine(" There are currently no developers requiring a Pluralsight license.");
+            Console.WriteLine("There are currently no developers requiring a Pluralsight license.");
             break;
         }
-        Console.WriteLine(" The following developers require a Pluralsight license:");
+        Console.WriteLine("The following developers require a Pluralsight license:");
         foreach (Developer Dev in listOfDevs)
             if (Dev.HasPluralsight == false)
                 Console.WriteLine(Dev.FullName);
@@ -96,11 +97,11 @@ switch(userinput)
         var teamsList = devTeamRepo.Read();
         if (teamsList.Count == 0)
         {
-            Console.WriteLine(" There are currently no teams in the database.");
+            Console.WriteLine("There are currently no teams in the database.");
         }
         foreach (DevTeam devTeam in teamsList)
         {
-            Console.WriteLine($" Team ID : {devTeam.Id} | {devTeam.Name}");
+            Console.WriteLine($"Team ID : {devTeam.Id} | {devTeam.Name}");
             var teamMems = devTeam.Read(); 
             if (teamMems.Count == 0)
             {
@@ -119,12 +120,12 @@ switch(userinput)
 
     case "new team":
         var developerTeam = new DevTeam();
-        Console.WriteLine(" Enter team name.");
+        Console.WriteLine("Enter team name.");
         teamname:
         var teamName = Console.ReadLine();
         if (String.IsNullOrWhiteSpace(teamName))
         {
-            Console.WriteLine(" Team name cannot be blank. Please try again.");
+            Console.WriteLine("Team name cannot be blank. Please try again.");
             goto teamname;
         }
         developerTeam.Name = teamName;
@@ -134,49 +135,49 @@ switch(userinput)
 
 
     case "new member":
-        Console.WriteLine(" Enter team ID");
+        Console.WriteLine("Enter team ID");
         var teamId = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(" Enter the ID of the developer you would like to add to this team.");
+        Console.WriteLine("Enter the ID of the developer you would like to add to this team.");
         var devId = Convert.ToInt32(Console.ReadLine());
 
         Developer dev = devRepo.Find(devId);
         if (dev == null)
         {
-            Console.WriteLine(" Your input does match any developer ID in the database. Please try again.");
+            Console.WriteLine("Your input does match any developer ID in the database. Please try again.");
             break;
         }
         bool success = devTeamRepo.Update(teamId, dev);
 
         if (success == true)
         {
-            Console.WriteLine(" The team has been successfully updated.");
+            Console.WriteLine("The team has been successfully updated.");
             break;
         }
         else
         {
-            Console.WriteLine(" Your input does match any team ID in the database. Please try again.");
+            Console.WriteLine("Your input does match any team ID in the database. Please try again.");
             break;
         }
 
     case "remove member":
-        Console.WriteLine(" Enter ID of team from which you would like to remove a member.");
+        Console.WriteLine("Enter ID of team from which you would like to remove a member.");
         var teamID = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine(" Enter ID of developer you would like to remove.");
+        Console.WriteLine("Enter ID of developer you would like to remove.");
         var devID = Convert.ToInt32(Console.ReadLine());
         bool removalsuccess = devTeamRepo.DeleteMember(teamID, devID);
         if (removalsuccess == true)
         {
-        Console.WriteLine(" The developer has been removed from the team.");
+        Console.WriteLine("The developer has been removed from the team.");
         break;
         }
         else
         {
-            Console.WriteLine(" One or Both of your inputs did not match the database. Please check your inputs and try again.");
+            Console.WriteLine("One or Both of your inputs did not match the database. Please check your inputs and try again.");
             break;
         }
 
     default:
-        Console.WriteLine("\n Invalid command. Please enter a valid command. Type \"help\" for a list of valid commands.");
+        Console.WriteLine("\nInvalid command. Please enter a valid command. Type \"help\" for a list of valid commands.");
         break;
 
 }
@@ -187,20 +188,20 @@ goto input;
 
 static void HelpMenu()
 {
-    Console.WriteLine(" devs -- see a list of all developers");
-    Console.WriteLine(" ");
-    Console.WriteLine(" new dev -- create a new developer");
-    Console.WriteLine(" ");
-    Console.WriteLine(" pluralsight -- see list of developers needing a Pluralsight license");
-    Console.WriteLine(" ");
-    Console.WriteLine(" teams -- see list of all teams");
-    Console.WriteLine(" ");
-    Console.WriteLine(" new team -- create a developer team");
-    Console.WriteLine(" ");
-    Console.WriteLine(" new member -- add a developer to a team");
-    Console.WriteLine(" ");
-    Console.WriteLine(" remove member -- remove a developer from a team");
-    Console.WriteLine(" ");
+    Console.WriteLine("\tdevs -- see a list of all developers");
+    Console.WriteLine();
+    Console.WriteLine("\tnew dev -- create a new developer");
+    Console.WriteLine();
+    Console.WriteLine("\tpluralsight -- see list of developers needing a Pluralsight license");
+    Console.WriteLine();
+    Console.WriteLine("\tteams -- see list of all teams");
+    Console.WriteLine();
+    Console.WriteLine("\tnew team -- create a developer team");
+    Console.WriteLine();
+    Console.WriteLine("\tnew member -- add a developer to a team");
+    Console.WriteLine();
+    Console.WriteLine("\tremove member -- remove a developer from a team");
+    Console.WriteLine();
 }
 
 
