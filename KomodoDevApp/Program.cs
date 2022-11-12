@@ -158,9 +158,6 @@ switch(userinput)
             break;
         }
 
-    case "new members":
-        break;
-
     case "remove member":
         Console.WriteLine(" Enter ID of team from which you would like to remove a member.");
         var teamID = Convert.ToInt32(Console.ReadLine());
@@ -201,8 +198,6 @@ static void HelpMenu()
     Console.WriteLine(" new team -- create a developer team");
     Console.WriteLine(" ");
     Console.WriteLine(" new member -- add a developer to a team");
-    Console.WriteLine(" ");
-    Console.WriteLine(" new members -- add multiple developers to a team");
     Console.WriteLine(" ");
     Console.WriteLine(" remove member -- remove a developer from a team");
     Console.WriteLine(" ");

@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Komodo-Dev-Team-App\DevTeams.Data\DevTeams.Data.csproj" />
-    <ProjectReference Include="..\..\..\Komodo-Dev-Team-App\DevTeams.Repositories\DevTeams.Repositories.csproj" />
+    <ProjectReference Include="..\DevTeams.Data\DevTeams.Data.csproj" />
+    <ProjectReference Include="..\DevTeams.Repositories\DevTeams.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

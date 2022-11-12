@@ -1,0 +1,184 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\DevTeams.UI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\DevTeams.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\DevTeams.Data.csproj",
+        "projectName": "DevTeams.Data",
+        "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\DevTeams.Data.csproj",
+        "packagesPath": "C:\\Users\\n64ev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\n64ev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Repositories\\DevTeams.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Repositories\\DevTeams.Repositories.csproj",
+        "projectName": "DevTeams.Repositories",
+        "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Repositories\\DevTeams.Repositories.csproj",
+        "packagesPath": "C:\\Users\\n64ev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\n64ev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\DevTeams.Data.csproj": {
+                "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\DevTeams.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\DevTeams.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\DevTeams.UI.csproj",
+        "projectName": "DevTeams.UI",
+        "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\DevTeams.UI.csproj",
+        "packagesPath": "C:\\Users\\n64ev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\n64ev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\DevTeams.Data.csproj": {
+                "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\DevTeams.Data.csproj"
+              },
+              "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Repositories\\DevTeams.Repositories.csproj": {
+                "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Repositories\\DevTeams.Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
