@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\DevTeams.UI.csproj": {}
+    "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.UI\\DevTeams.UI.csproj": {}
   },
   "projects": {
     "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.Data\\DevTeams.Data.csproj": {
@@ -118,14 +118,14 @@
         }
       }
     },
-    "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\DevTeams.UI.csproj": {
+    "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.UI\\DevTeams.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\DevTeams.UI.csproj",
+        "projectUniqueName": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.UI\\DevTeams.UI.csproj",
         "projectName": "DevTeams.UI",
-        "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\DevTeams.UI.csproj",
+        "projectPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.UI\\DevTeams.UI.csproj",
         "packagesPath": "C:\\Users\\n64ev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\KomodoDevApp\\obj\\",
+        "outputPath": "C:\\Users\\n64ev\\OneDrive\\Documents\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\KomodoDevApp\\DevTeams.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\n64ev\\AppData\\Roaming\\NuGet\\NuGet.Config",
